@@ -2,7 +2,6 @@
 
 package Employees;
 
-import javax.jws.soap.SOAPBinding;
 import java.util.ArrayList;
 
 interface User {
