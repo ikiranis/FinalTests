@@ -71,6 +71,11 @@ class Garden {
 
 class Company {
     private ArrayList<Order> orders = new ArrayList<>();
+    private ArrayList<Service> services = new ArrayList<>();
+
+    public double calcCostPerWork() {
+        return 0;
+    }
 }
 
 public class ServiceSystem {
