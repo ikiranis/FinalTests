@@ -31,8 +31,7 @@ abstract class Room implements CostEvaluation {
         this.surface = surface;
     }
 
-    @Override
-    abstract public double calcYearCost();
+
 }
 
 class ClassRoom extends Room {
@@ -43,7 +42,7 @@ class ClassRoom extends Room {
 
     @Override
     public double calcYearCost() {
-        return 12 * (100 * super.getSurface());
+        return 12 * (100 * getSurface());
     }
 }
 
@@ -152,7 +151,7 @@ public class SchoolSystem {
         school.addTeacher(antoniou);
 
         ClassRoom class1 = new ClassRoom("Class 1", 125.8);
-        Laboratory lab1 = new Laboratory("Lab 1", 130, 5);
+        Laboratory lab1 = new Laboratory("Lab 1", 130.0, 5);
 
         school.addRoom(class1);
         school.addRoom(lab1);
