@@ -99,6 +99,10 @@ class School {
             totalCost += room.calcYearCost();
         }
 
+        for (Teacher teacher : teachers) {
+            totalCost += teacher.calcYearCost();
+        }
+
         return totalCost;
     }
 }
